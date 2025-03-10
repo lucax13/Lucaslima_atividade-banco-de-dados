@@ -50,3 +50,14 @@ INSERT INTO professor(nome, area_atuacao) VALUES('ozzy osbourne', 'desenvolvimen
 
 INSERT INTO professor(nome, area_atuacao) VALUES('david gilmour', 'desenvolvimento');
 ```
+
+### alunos
+```sql
+INSERT INTO aluno(nome, data_nascimento, nota_1, nota_2) VALUES('marcos', 15/01/2003, 10, 6);
+
+INSERT INTO aluno(nome, data_nascimento, nota_1, nota_2) VALUES('');
+
+INSERT INTO aluno(nome, data_nascimento, nota_1, nota_2) VALUES('');
+
+INSERT INTO aluno(nome, data_nascimento, nota_1, nota_2) VALUES('');
+```
