@@ -25,9 +25,13 @@ area_atuacao ENUM('desing', 'desenvolvimento', 'infra')
 );
 ```
 ```sql
-INSERT INTO curso (titulo) VALUES('Front-end');
-INSERT INTO curso (titulo) VALUES('Back-end');
-INSERT INTO curso (titulo) VALUES('Desing');
-INSERT INTO curso (titulo) VALUES('Figma');
-INSERT INTO curso (titulo) VALUES('Redes Computadores');
+INSERT INTO curso (titulo, carga_horaria) VALUES('Front-end', 40);
+
+INSERT INTO curso (titulo, carga_horaria) VALUES('Back-end', 80);
+
+INSERT INTO curso (titulo, carga_horaria) VALUES('Desing', 30);
+
+INSERT INTO curso (titulo, carga_horaria) VALUES('Figma', 10);
+
+INSERT INTO curso (titulo, carga_horaria) VALUES('Redes Computadores', 100);
 ```
