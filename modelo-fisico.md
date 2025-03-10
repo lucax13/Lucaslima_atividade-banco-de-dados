@@ -24,14 +24,29 @@ nome VARCHAR(45) NOT NULL,
 area_atuacao ENUM('desing', 'desenvolvimento', 'infra')
 );
 ```
+
+### curso e carga horaria
 ```sql
-INSERT INTO curso (titulo, carga_horaria) VALUES('Front-end', 40);
+INSERT INTO curso(titulo, carga_horaria) VALUES('Front-end', 40);
 
-INSERT INTO curso (titulo, carga_horaria) VALUES('Back-end', 80);
+INSERT INTO curso(titulo, carga_horaria) VALUES('Back-end', 80);
 
-INSERT INTO curso (titulo, carga_horaria) VALUES('Desing', 30);
+INSERT INTO curso(titulo, carga_horaria) VALUES('Desing', 30);
 
-INSERT INTO curso (titulo, carga_horaria) VALUES('Figma', 10);
+INSERT INTO curso(titulo, carga_horaria) VALUES('Figma', 10);
 
-INSERT INTO curso (titulo, carga_horaria) VALUES('Redes Computadores', 100);
+INSERT INTO curso(titulo, carga_horaria) VALUES('Redes Computadores', 100);
+```
+
+### professores
+```sql
+INSERT INTO professor(nome, area_atuacao) VALUES('lemmy kilmister', 'desing');
+
+INSERT INTO professor(nome, area_atuacao) VALUES('jon oliva', 'infra');
+
+INSERT INTO professor(nome, area_atuacao) VALUES('neil peart', 'desing');
+
+INSERT INTO professor(nome, area_atuacao) VALUES('ozzy osbourne', 'desenvolvimento');
+
+INSERT INTO professor(nome, area_atuacao) VALUES('david gilmour', 'desenvolvimento');
 ```
