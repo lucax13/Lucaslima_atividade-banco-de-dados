@@ -67,18 +67,21 @@ INSERT INTO professores(nome, area_atuacao curso_id ) VALUES('david gilmour', 'd
 
 ### alunos
 ```sql
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('marcos', '15-01-2003' , 10, 6,);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('marcos', '2000-03-07' , 10, 6, 17);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('luan', '2006-09-08', 6, 9, 16);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('pietra', '2009-08-07', 4, 5, 17);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lima','1990-01-03', 10, 2, 13 );
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lua', '2009-01-12', 10, 2, 14);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('amora', '2010-02-11', 10, 2, 16);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2) VALUES('');
+
+
+
+
 ```
 
