@@ -122,4 +122,23 @@ SELECT nome, area_atuacao FROM professores
 WHERE area_atuacao = 'desenvolvimento';
 ```
 
+5) Faça uma consulta que mostre a quantidade de professores que cada área ("design", "infra", "desenvolvimento") possui.
+```sql
+SELECT area_atuacao,
+ COUNT(area_atuacao) AS "quantidade de professores"  
+ FROM professores WHERE  
+ area_atuacao = 'desenvolvimento';
+ 
+SELECT area_atuacao,
+ COUNT(area_atuacao) AS "quantidade de professores"  
+ FROM professores WHERE  
+ area_atuacao = 'design';  
+ 
+ SELECT area_atuacao,
+ COUNT(area_atuacao) AS "quantidade de professores"  
+ FROM professores WHERE  
+ area_atuacao = 'infra';  
+```
+
+
 
