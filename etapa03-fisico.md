@@ -157,7 +157,9 @@ FROM alunos
 JOIN cursos ON alunos.curso_id = cursos.id
 JOIN professores ON cursos.id = professores.curso_id;
 ```
-
+9) Faça uma consulta que mostre a quantidade de alunos que cada curso possui. Classifique os resultados em ordem descrecente de acordo com a quantidade de alunos.
+```sql
+```
 
 
 
