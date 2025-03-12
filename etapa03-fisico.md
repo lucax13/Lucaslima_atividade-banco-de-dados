@@ -150,6 +150,14 @@ JOIN cursos ON alunos.curso_id = cursos.id;
 ```sql
 SELECT professores.nome, area_atuacao FROM professores
 ```
+8) Faça uma consulta que mostre o nome dos alunos, o título dos cursos que fazem, e o professor de cada curso.
+```sql
+SELECT alunos.nome, cursos.titulo, professores.nome
+FROM alunos
+JOIN cursos ON alunos.curso_id = cursos.id
+JOIN professores ON cursos.id = professores.curso_id;
+```
+
 
 
 
