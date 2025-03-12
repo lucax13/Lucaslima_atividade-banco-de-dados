@@ -105,7 +105,6 @@ WHERE data_nascimento < '2009-01-01';
 ```sql
 SELECT nome, id, ROUND((AVG(nota_1) + AVG(nota_2)) / 2, 2) AS "media dos alunos"
 FROM alunos
-WHERE id = 3 AND nome = 'luan'
 GROUP BY nome, id;
 ```
 
@@ -146,9 +145,10 @@ SELECT alunos.nome, cursos.titulo, cursos.carga_horaria
 FROM alunos
 JOIN cursos ON alunos.curso_id = cursos.id;
 ```
+
 7) Faça uma consulta que mostre o nome dos professores e o título do curso que lecionam. Classifique pelo nome do professor.
 ```sql
-SELECT professores.
+SELECT professores.nome, area_atuacao FROM professores
 ```
 
 
