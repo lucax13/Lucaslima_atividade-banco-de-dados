@@ -14,8 +14,8 @@ professor_id INT NOT NULL
 CREATE TABLE alunos(id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(45) NOT NULL,
 data_nascimento DATE,
-nota_1 DECIMAL(10),
-nota_2 DECIMAL(10),
+nota_1 DECIMAL(4,2),
+nota_2 DECIMAL(4,2),
 curso_id INT NOT NULL 
 );
 
@@ -78,10 +78,10 @@ INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lima
 INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lua', '2009-01-12', 10, 2, 14);
 
 INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('amora', '2010-02-11', 10, 2, 16);
-
-
-
-
-
 ```
+```sql
+UPDATE 
+```
+
+
 
