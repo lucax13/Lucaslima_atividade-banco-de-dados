@@ -98,11 +98,20 @@ INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('ly',
 SELECT nome, data_nascimento FROM alunos
 WHERE data_nascimento < '2009-01-01';
 
+
+SELECT nome, id, ROUND((AVG(nota_1) + AVG(nota_2)) / 2, 2) AS "media dos alunos"
+FROM alunos
+WHERE id = 3 AND nome = 'luan'
+GROUP BY nome, id;
+
+
 SELECT nome, area_atuacao FROM professores
 WHERE area_atuacao = 'desenvolvimento';
 
-SELECT nome, id ROUND((AVG nota_1 + nota_2)/2) AS  "media dos alunos"
-FROM alunos WHERE id
+SELECT titulo, id, carga_horaria, ROUND(carga_horaria * 0.25, 2) AS 'limite de faltas' 
+FROM cursos
+WHERE id = 15; 
+
 ```
 
 
