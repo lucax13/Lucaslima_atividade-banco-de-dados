@@ -140,5 +140,16 @@ SELECT area_atuacao,
  area_atuacao = 'infra';  
 ```
 
+6) Faça uma consulta que mostre o nome dos alunos, o título e a carga horária dos cursos que fazem.
+```sql
+SELECT alunos.nome, cursos.titulo, cursos.carga_horaria
+FROM alunos
+JOIN cursos ON alunos.curso_id = cursos.id;
+```
+7) Faça uma consulta que mostre o nome dos professores e o título do curso que lecionam. Classifique pelo nome do professor.
+```sql
+SELECT professores.
+```
+
 
 
