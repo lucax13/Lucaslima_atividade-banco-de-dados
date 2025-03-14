@@ -159,6 +159,14 @@ JOIN professores ON cursos.id = professores.curso_id;
 ```
 9) Faça uma consulta que mostre a quantidade de alunos que cada curso possui. Classifique os resultados em ordem descrecente de acordo com a quantidade de alunos.
 ```sql
+SELECT
+  cursos.titulo AS Curso,
+  COUNT(alunos.nome) AS Quantidade
+FROM alunos
+  JOIN cursos
+  ON alunos.curso_id = cursos.id
+GROUP BY cursos.titulo
+ORDER BY Quantidade;
 ```
 
 
