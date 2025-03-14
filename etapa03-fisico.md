@@ -54,15 +54,15 @@ INSERT INTO cursos (titulo, carga_horaria) VALUES('Redes Computadores', 100);
 
 ### professores
 ```sql
-INSERT INTO professores(nome, area_atuacao curso_id) VALUES('lemmy kilmister', 'desing', 16);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('lemmy kilmister', 'desing', 16);
 
-INSERT INTO professores(nome, area_atuacao curso_id) VALUES('jon oliva', 'infra', 17);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('jon oliva', 'infra', 17);
 
-INSERT INTO professores(nome, area_atuacao curso_id) VALUES('neil peart', 'desing', 16);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('neil peart', 'desing', 16);
 
-INSERT INTO professores(nome, area_atuacao curso_id) VALUES('ozzy osbourne', 'desenvolvimento', 14);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('ozzy osbourne', 'desenvolvimento', 14);
 
-INSERT INTO professores(nome, area_atuacao curso_id ) VALUES('david gilmour', 'desenvolvimento', 14);
+INSERT INTO professores(nome, area_atuacao ,curso_id ) VALUES('david gilmour', 'desenvolvimento', 14);
 ```
 
 ### alunos
