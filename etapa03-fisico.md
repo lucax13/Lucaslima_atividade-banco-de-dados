@@ -22,7 +22,7 @@ curso_id INT NOT NULL
 CREATE TABLE professores(id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(45) NOT NULL,
 area_atuacao ENUM('desing', 'desenvolvimento', 'infra'),
-professor_id INT NOT NULL
+curso_id INT NOT NULL
 );
 ```
 
@@ -54,43 +54,43 @@ INSERT INTO cursos (titulo, carga_horaria) VALUES('Redes Computadores', 100);
 
 ### professores
 ```sql
-INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('lemmy kilmister', 'desing', 16);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('lemmy kilmister', 'desing', 3);
 
-INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('jon oliva', 'infra', 17);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('jon oliva', 'infra', 5);
 
-INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('neil peart', 'desing', 16);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('neil peart', 'desing', 4);
 
-INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('ozzy osbourne', 'desenvolvimento', 14);
+INSERT INTO professores(nome, area_atuacao, curso_id) VALUES('ozzy osbourne', 'desenvolvimento', 1);
 
-INSERT INTO professores(nome, area_atuacao ,curso_id ) VALUES('david gilmour', 'desenvolvimento', 14);
+INSERT INTO professores(nome, area_atuacao ,curso_id ) VALUES('david gilmour', 'desenvolvimento', 2);
 ```
 
 ### alunos
 ```sql
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('marcos', '2000-03-07' , 10, 6, 17);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('marcos', '2000-03-07' , 10, 6, 1);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('luan', '2006-09-08', 6, 9, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('luan', '2006-09-08', 6, 9, 4);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('pietra', '2009-08-07', 4, 5, 17);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('pietra', '2009-08-07', 4, 5, 3);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lima','1990-01-03', 10, 2, 13 );
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lima','1990-01-03', 10, 2, 2 );
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lua', '2009-01-12', 10, 2, 14);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('lua', '2009-01-12', 10, 2, 5);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('amora', '2010-02-11', 10, 2, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('amora', '2010-02-11', 10, 2, 5);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('kelly', '1997-01-01', 10, 2, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('kelly', '1997-01-01', 10, 2, 2);
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('elly', '1997-01-01', 10, 2, 16);
-
-
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('ly', '1997-01-01', 10, 2, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('elly', '1997-01-01', 10, 2, 1);
 
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('elly', '1997-01-01', 10, 2, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('ly', '1997-01-01', 10, 2, 3);
 
 
-INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('ly', '1997-01-01', 10, 2, 16);
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('elly', '1997-01-01', 10, 2, 4);
+
+
+INSERT INTO alunos(nome, data_nascimento, nota_1, nota_2, curso_id) VALUES('ly', '1997-01-01', 10, 2, 5);
 ```
 ### crud consultas
 
