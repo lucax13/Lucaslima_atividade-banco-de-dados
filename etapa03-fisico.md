@@ -202,6 +202,12 @@ DELETE FROM alunos WHERE id = 4;
 
 13) Faça uma consulta que mostre a lista de alunos atualizada e o título dos cursos que fazem, classificados pelo nome do aluno.
 ```sql
+SELECT
+  alunos.nome AS Aluno,
+  cursos.titulo AS Curso
+FROM alunos
+JOIN cursos ON alunos.curso_id = cursos.id
+ORDER BY alunos.nome;
 
 ```
 
